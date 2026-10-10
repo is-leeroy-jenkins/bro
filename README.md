@@ -57,7 +57,7 @@ ___
 </a>
 </td>
 <td align="center" width="195" height="1" >
-<a href="https://bro-py.streamlit.app/">
+<a href="https://lil-bro.streamlit.app/">
 <img src="https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white" alt="Streamlit App">
 </a>
 </td>
@@ -909,13 +909,13 @@ model repositories for application- and model-specific licensing terms.
 ## PyPI application
 
 ```powershell
-python -m pip install bro-py
+python -m pip install lil-bro
 bro
 ```
 
 `bro` opens the tabless Windows WebView2 window by default.
 `bro-browser` opens standard browser mode. Python 3.11–3.12 is supported.
-The distribution is `bro-py`; the import is `bro`.
+The distribution is `lil-bro`; the import is `bro`.
 Set `BRO_LLM_PATH` to your GGUF file's absolute path before launch.
 The model is not included. Windows requires Edge WebView2 Runtime.
 See [installation](resources/installation.md) and [publication](resources/pypi-release.md).

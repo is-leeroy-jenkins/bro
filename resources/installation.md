@@ -16,7 +16,7 @@ A built installer includes Python and the application dependencies. A separate P
 After publication:
 
 ```powershell
-python -m pip install bro-py
+python -m pip install lil-bro
 bro
 ```
 
