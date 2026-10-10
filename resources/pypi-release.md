@@ -1,6 +1,6 @@
 # PyPI release
 
-Distribution: **bro-py**. Import: **bro**. Initial version: **0.1.0**.
+Distribution: **lil-bro**. Import: **bro**. Initial version: **0.1.0**.
 
 ## First publication — complete these steps in order
 
@@ -10,17 +10,17 @@ Distribution: **bro-py**. Import: **bro**. Initial version: **0.1.0**.
 
    | Field | Value |
    |---|---|
-   | PyPI project name | `bro-py` |
+   | PyPI project name | `lil-bro` |
    | Owner | `is-bro-jenkins` |
    | Repository | `bro` |
    | Workflow filename | `publish-to-pypi.yml` |
    | Environment | `pypi` |
 
 4. After the publisher is registered, open GitHub **Actions → Publish to PyPI → Run workflow**, select `main`, and run it.
-5. Confirm both **build** and **publish** succeed. Check [the project page](https://pypi.org/project/bro-py/) and install in a fresh virtual environment:
+5. Confirm both **build** and **publish** succeed. Check [the project page](https://pypi.org/project/lil-bro/) and install in a fresh virtual environment:
 
    ```powershell
-   python -m pip install bro-py
+   python -m pip install lil-bro
    bro
    ```
 
@@ -31,7 +31,7 @@ A pending publisher does not reserve the package name. The first successful uplo
 `bro` opens the tabless Windows window. `bro-browser` opens the standard browser UI.
 
 ```powershell
-python -m pip install bro-py
+python -m pip install lil-bro
 bro
 ```
 
@@ -47,4 +47,4 @@ The wheel contains the application modules, PNG/ICO interface assets, and Stream
 
 Application data uses `%LOCALAPPDATA%\Bro` on Windows and `~/AppData/Local/Bro` when `LOCALAPPDATA` is absent. Existing user resources are preserved. Provider credentials, external loader services, downloaded models require their normal configuration.
 
-Avoid installing the unrelated `bro` distribution alongside `bro-py`; both use the `bro` import namespace.
+Avoid installing the unrelated `bro` distribution alongside `lil-bro`; both use the `bro` import namespace.
