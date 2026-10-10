@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bro-py"
+version = "0.1.0"
+description = "Local GGUF Streamlit assistant for chat, document retrieval, embeddings, and analysis"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [{name = "Terry Eppler"}]
+license = "MIT"
+license-files = ["LICENSE.txt"]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/is-bro-jenkins/bro"
+Documentation = "https://is-bro-jenkins.github.io/bro/"
+Issues = "https://github.com/is-bro-jenkins/bro/issues"
+
+[project.scripts]
+bro = "bro.cli:desktop"
+bro-browser = "bro.cli:main"
+
+[tool.setuptools]
+packages = ["bro"]
+package-dir = {bro = "."}
+include-package-data = false
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-runtime.txt"]}
+
+[tool.setuptools.package-data]
+bro = ["resources/**/*.png", "resources/**/*.ico", ".streamlit/config.toml"]
+

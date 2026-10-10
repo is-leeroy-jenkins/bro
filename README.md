@@ -7,7 +7,7 @@
   <a href="#-application-modes">Modes</a> ·
   <a href="#-architecture">Architecture</a> ·
   <a href="#-repository-structure">Structure</a> ·
-  <a href="#-installation--setup">Install</a> ·
+  <a href="resources/installation.md">Install</a> ·
   <a href="#-configuration">Configuration</a> ·
   <a href="#-text-generation">AI</a> ·
   <a href="#-document-qa">RAG</a> ·
@@ -23,7 +23,7 @@ ___
 
 
 Bro is a local-first Streamlit application for text generation, document-grounded retrieval,
-semantic search, prompt engineering, and SQLite-backed data management. It is designed to run a local 
+semantic search, prompt engineering, and SQLite-backed data management. It is designed to run a local
 GGUF language model through `llama-cpp-python` while giving analysts direct control over inference
 parameters, prompt templates, document context, retrieval behavior, semantic chunking, and local
 application data.
@@ -905,3 +905,17 @@ Image-to-Text path.
 
 This application is provided for personal, research, and open-source use. Refer to the project and
 model repositories for application- and model-specific licensing terms.
+
+## PyPI application
+
+```powershell
+python -m pip install bro-py
+bro
+```
+
+`bro` opens the tabless Windows WebView2 window by default.
+`bro-browser` opens standard browser mode. Python 3.11–3.12 is supported.
+The distribution is `bro-py`; the import is `bro`.
+Set `BRO_LLM_PATH` to your GGUF file's absolute path before launch.
+The model is not included. Windows requires Edge WebView2 Runtime.
+See [installation](resources/installation.md) and [publication](resources/pypi-release.md).

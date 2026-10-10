@@ -165,3 +165,10 @@ cython_debug/
 #.idea/
 
 /models/
+
+# Application packaging
+build/
+dist/
+dist-installer/
+*.egg-info/
+__pycache__/

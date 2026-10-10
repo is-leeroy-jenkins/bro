@@ -199,7 +199,7 @@ BLUE_DIVIDER = "<div style='height:2px;align:left;background:#0078FC;margin:20px
 APP_TITLE = 'Bro'
 APP_SUBTITLE = 'Local AI based on Gemma 3'
 DB_PATH = 'stores/sqlite/bro.db'
-MODEL_PATH = r'C:\Users\terry\source\llm\bro\bro-3-4b-it-qat-Q4_K_M.gguf'
+MODEL_PATH = BRO_LLM_PATH or r'C:\Users\terry\source\llm\bro\bro-3-4b-it-qat-Q4_K_M.gguf'
 DEFAULT_CTX = 4096
 CORES = multiprocessing.cpu_count( )
 FAVICON = r'resources/images/favicon.ico'
