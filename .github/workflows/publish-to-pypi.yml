@@ -30,7 +30,7 @@ jobs:
       - run: |
           python -m pip install --no-deps dist/*.whl
           cd /tmp
-          python -c "import lil-bro; import li-bro.cli"
+          python -c "import bro; import bro.cli"
       - uses: actions/upload-artifact@v4
         with:
           name: python-distributions
